@@ -1,4 +1,4 @@
-# 📝 Template X [Under Development]
+# 📝 Template X
 
 A powerful yet easy-to-use tool for generating and loading templates on the fly! 🚀
 
