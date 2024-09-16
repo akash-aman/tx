@@ -23,5 +23,5 @@ func Execute() {
 }
 
 func init() {
-	RootCmd.AddCommand()
+	RootCmd.AddCommand(installCmd, addCmd, rmCmd)
 }
