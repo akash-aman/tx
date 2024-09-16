@@ -19,17 +19,6 @@ var listCmd = &cobra.Command{
 	 * Run the command.
 	 */
 	Run: func(cmd *cobra.Command, args []string) {
-		//nameFlag, _ := cmd.Flags().GetString("name")
-
-		//var name string
-		/**
-		 * Determine the folder name.
-		 */
-		// if nameFlag != "" {
-		// 	name = nameFlag
-		// } else if len(args) > 0 {
-		// 	name = args[0]
-		// }
 
 		if _, err := tea.NewProgram(list.NewModel(), tea.WithAltScreen()).Run(); err != nil {
 			fmt.Println("Error running program:", err)
@@ -37,11 +26,4 @@ var listCmd = &cobra.Command{
 		}
 
 	},
-}
-
-func init() {
-	/**
-	 * Add the flags to the command.
-	 */
-	//listCmd.Flags().StringP("name", "n", "", "Name of the template")
 }
